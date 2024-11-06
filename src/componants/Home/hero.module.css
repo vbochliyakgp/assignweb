@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('./media/hero_back.png');
+    background-image: url('/media/hero_back.png');
     background-size: cover;
     background-position: center;
     text-align: center;
