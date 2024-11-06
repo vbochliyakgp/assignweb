@@ -1,0 +1,83 @@
+/* Login Component Styles */
+.login_component {
+    position: fixed; /* Fixed position to cover the viewport */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1100; /* Ensure it's on top of other elements */
+    padding: 20px; /* Padding for inner spacing */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.close_button {
+    position: absolute; /* Absolute positioning for the close button */
+    top: 20px;
+    right: 20px;
+    background: none; /* No background */
+    border: none; /* No border */
+    font-size: 24px; /* Font size for the close icon */
+}
+
+.login_form {
+    max-width: 400px; /* Max width for the form */
+    width: 100%; /* Full width */
+    background-color: #f9f9f9; /* Light gray background for form */
+    padding: 30px; /* Padding for the form */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+.login_form h2 {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Spacing below title */
+    color: #333; /* Dark text */
+}
+.any_message{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.login_form input {
+    width: 100%; /* Full width for inputs */
+    padding: 12px; /* Padding inside inputs */
+    margin: 10px 0; /* Spacing between inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+}
+
+.login_form button {
+    width: 100%; /* Full width button */
+    padding: 12px; /* Padding for button */
+    background-color: #4CAF50; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.login_form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.options {
+    text-align: center; /* Centered text for options */
+    margin-top: 15px; /* Spacing above options */
+}
+
+.options a {
+    color: #4CAF50; /* Link color */
+    text-decoration: none; /* No underline */
+    font-size: 14px; /* Smaller font size */
+}
+
+.options a:hover {
+    cursor: pointer;
+    text-decoration: underline; /* Underline on hover */
+}

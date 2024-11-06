@@ -1,0 +1,117 @@
+.dashboard_container {
+    position: fixed;
+    z-index: 1100;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    background-color: white;
+    overflow-y: scroll;
+  }
+  
+  .dashboard_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard_title {
+    font-size: 24px;
+  }
+  .refreshButton {
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: background-color .1s ease;
+  }
+  .refreshButton:hover {
+    background-color: rgb(201, 201, 201);
+  }
+  .refreshButton:active {
+    background-color: rgb(53, 161, 43);
+  }
+  .close_btn {
+    margin-right: 10px;
+    font-size: 24px;
+    border: none;
+    background: none;
+  }
+  
+  .assignment_card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  
+  .edit_btn, .cancel_btn, .query_btn, .comment_btn {
+    width: 81px;
+    padding: 5px;
+    margin: 5px 0;
+    color: white;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .edit_btn {
+    background-color: #00A007BF;  }
+  
+  .cancel_btn {
+    background-color: #ff00008c;
+  }
+  
+  .query_btn {
+    background-color: #004998B5;
+  }
+  
+  .comment_btn {
+    background-color: #D18700C2;
+  }
+  
+  /* Expert Comments Pop-up */
+  .expert_comments_popup {
+    position: fixed;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;    border: 1px solid #ccc;
+    border-radius: 8px;
+    z-index: 1101;
+  }
+  
+  .close_popup {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card_buttons {
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .edit_btn, .cancel_btn, .query_btn, .comment_btn {
+      margin: 0 10px;
+      width: 100px;
+    }
+  }
+  

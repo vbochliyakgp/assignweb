@@ -1,0 +1,106 @@
+.mobile_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo_a {
+    height: 40px;
+}
+
+.logo_a img {
+    height: 40px;
+}
+
+.menu_btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.menu {
+    width: 100vw;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: fixed;
+    top: 60px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1001; 
+}
+
+.menu_closed {
+   display: none;
+}
+
+.menu_open {
+   display: flex;
+}
+
+.linkOnlyContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.nav_links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.nav_links li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.1s;
+}
+
+.nav_links li a:hover {
+    color: #4CAF50;
+}
+
+.login_btn, .logout_btn {
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: none; /* Ensure buttons are styled correctly */
+}
+
+.login_btn {
+    background-color: #4CAF50; /* Green for login */
+}
+
+.logout_btn {
+    background-color: #cf6666; /* Soft red for logout */
+}
+
+.login_btn:hover {
+    background-color: #45a049; /* Darker green for hover */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.logout_btn:hover {
+    background-color: #8f0000; /* Darker red for hover */
+    transform: translateY(-2px); /* Lift effect */
+}

@@ -1,0 +1,50 @@
+.container {
+  position: fixed;
+  z-index: 1100;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: white;
+  overflow-y: scroll;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .refreshButton {
+    background: transparent;
+    color: black;
+    border: none;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: background-color .1s ease;
+  }
+  .refreshButton:hover {
+    background-color: rgb(201, 201, 201);
+  }
+  .refreshButton:active {
+    background-color: rgb(53, 161, 43);
+  }
+  
+  .cutButton {
+    margin-right: 10px;
+    font-size: 24px;
+    border: none;
+    background: none;
+  }
+  
+  .cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+  

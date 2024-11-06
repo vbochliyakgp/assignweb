@@ -1,0 +1,56 @@
+.homeworkHelpContainer {
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f9fcff;
+}
+
+.homeworkHelpContainer h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.steps {
+    display: flex;
+    justify-content: flex-start; 
+    overflow-x: auto; 
+    margin-bottom: 20px;
+}
+
+.step {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%; 
+    max-width: 220px;
+    text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.20) -5px 5px, rgba(0, 0, 0, 0.15) -10px 5px, rgba(0, 0, 0, 0.1) -15px 5px, rgba(0, 0, 0, 0.05) -20px 5px;
+    flex: 0 0 auto; 
+}
+.step:first-child {
+    margin-left: 20px;
+  }
+.stepNumber {
+    font-size: 1.5em;
+    color: #8c30e3;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.step p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+    display: block;
+}
