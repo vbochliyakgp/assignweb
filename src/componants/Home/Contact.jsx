@@ -83,12 +83,19 @@ export default function Contact() {
       >
         {!isAuthenticated && (
           <>
-            <input ref={nameref} type="text" placeholder="Your Name" required />
+            <input
+              ref={nameref}
+              type="text"
+              placeholder="Your Name"
+              required
+              style={{ border: "border: 1px solid #4CAF50" }}
+            />
             <input
               ref={emailref}
               type="email"
               placeholder="Your Email"
               required
+              style={{ border: "border: 1px solid #4CAF50" }}
             />
           </>
         )}
