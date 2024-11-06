@@ -88,14 +88,14 @@ export default function Contact() {
               type="text"
               placeholder="Your Name"
               required
-              style={{ border: "border: 1px solid #4CAF50" }}
+              style={{ border: "1px solid #4CAF50" }}
             />
             <input
               ref={emailref}
               type="email"
               placeholder="Your Email"
               required
-              style={{ border: "border: 1px solid #4CAF50" }}
+              style={{ border: "1px solid #4CAF50" }}
             />
           </>
         )}
