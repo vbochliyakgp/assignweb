@@ -99,7 +99,13 @@ export default function Contact() {
             />
           </>
         )}
-        <input ref={titleref} type="text" placeholder="Title" required />
+        <input
+          ref={titleref}
+          type="text"
+          placeholder="Title"
+          required
+          style={{ border: "1px solid #4CAF50" }}
+        />
         <textarea
           ref={messageref}
           placeholder="Your Query"
