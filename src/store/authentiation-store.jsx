@@ -58,13 +58,16 @@ export const GlobalContextForAppProvider = ({ children }) => {
     } else if (!isTokenExpired(refreshToken)) {
       // Make request to refresh the token
       console.log("Token is not valid, need to refresh");
-      const response = await fetch("http://3.7.71.83:80/api/token/refresh/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ refresh: refreshToken }),
-      });
+      const response = await fetch(
+        "http://15.207.99.9:8000/api/token/refresh/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ refresh: refreshToken }),
+        }
+      );
       if (response.ok) {
         const data = await response.json();
         const newAccessToken = data.access;
@@ -92,7 +95,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
 
   const LoginUser_function = async (email, password) => {
     try {
-      const response = await fetch("http://3.7.71.83:80/api_new/login/", {
+      const response = await fetch("http://15.207.99.9:8000/api_new/login/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -141,7 +144,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
     setuserMainComponant("loading");
     try {
       const response = await fetch(
-        "http://3.7.71.83:80//api_new/forgot-password/",
+        "http://15.207.99.9:8000//api_new/forgot-password/",
         {
           method: "POST",
           headers: {
@@ -177,7 +180,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
   const getMultipleAssignmentData = async () => {
     try {
       const response = await fetch(
-        "http://3.7.71.83:80/api_new/assignment-details/overview/",
+        "http://15.207.99.9:8000/api_new/assignment-details/overview/",
         {
           method: "GET",
           headers: {
@@ -206,7 +209,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
     if (isAuthenticated) {
       try {
         const response = await fetch(
-          `http://3.7.71.83:80/api_new/assignment-details/${dict.action}/${dict.unique_id}/`,
+          `http://15.207.99.9:8000/api_new/assignment-details/${dict.action}/${dict.unique_id}/`,
           {
             method: "GET",
             headers: {
@@ -215,7 +218,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
           }
         );
         console.log(
-          `http://3.7.71.83:80/api_new/assignment-details/${dict.action}/${dict.unique_id}/`
+          `http://15.207.99.9:8000/api_new/assignment-details/${dict.action}/${dict.unique_id}/`
         );
 
         const data = await response.json();
@@ -237,7 +240,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
     if (cnfm && isAuthenticated) {
       try {
         const response = await fetch(
-          `http://3.7.71.83:80/api_new/assignment-details/${dict.action}/${dict.unique_id}/`,
+          `http://15.207.99.9:8000/api_new/assignment-details/${dict.action}/${dict.unique_id}/`,
           {
             method: "DELETE",
             headers: {
@@ -246,7 +249,7 @@ export const GlobalContextForAppProvider = ({ children }) => {
           }
         );
         console.log(
-          `http://3.7.71.83:80/api_new/assignment-details/${dict.action}/${dict.unique_id}/`
+          `http://15.207.99.9:8000/api_new/assignment-details/${dict.action}/${dict.unique_id}/`
         );
 
         return { status: response.status };
