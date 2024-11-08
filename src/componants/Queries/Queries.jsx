@@ -38,7 +38,7 @@ const GeneralQueriesContainer = () => {
       setpanel("loading");
       try {
         const response = await fetch(
-          "http://15.207.99.9:8000/api_new/general-queries/",
+          "http://43.204.218.60/api_new/general-queries/",
           {
             method: "GET",
             headers: {
@@ -67,7 +67,7 @@ const GeneralQueriesContainer = () => {
       setpanel("loading");
       try {
         const response = await fetch(
-          "http://15.207.99.9:8000/api_new/general-queries/",
+          "http://43.204.218.60/api_new/general-queries/",
           {
             method: "DELETE",
             headers: {

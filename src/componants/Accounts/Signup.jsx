@@ -31,7 +31,7 @@ export default function SignUp() {
 
     setloading(true);
     try {
-      const response = await fetch("http://15.207.99.9:8000/api_new/signup/", {
+      const response = await fetch("http://43.204.218.60/api_new/signup/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -76,7 +76,7 @@ const ServiceForm = () => {
 
     try {
       const response = await fetch(
-        "http://15.207.99.9:8000/api_new/assignments/submit/",
+        "http://43.204.218.60/api_new/assignments/submit/",
         {
           method: "POST",
           headers: {

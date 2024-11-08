@@ -20,7 +20,7 @@ const AssignmentComments = ({ setpanel, comments, unique_id, refreshChat }) => {
     if (isAuthenticated) {
       try {
         const response = await fetch(
-          `http://15.207.99.9:8000/api_new/comments/${unique_id}/`,
+          `http://43.204.218.60/api_new/comments/${unique_id}/`,
           {
             method: "POST",
             headers: {
@@ -32,7 +32,7 @@ const AssignmentComments = ({ setpanel, comments, unique_id, refreshChat }) => {
             }),
           }
         );
-        console.log(`http://15.207.99.9:8000/api_new/comments/${unique_id}/`);
+        console.log(`http://43.204.218.60/api_new/comments/${unique_id}/`);
 
         const data = await response.json();
         if (response.ok) {
